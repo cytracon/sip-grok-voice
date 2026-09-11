@@ -1,0 +1,31 @@
+{
+  "name": "sip-grok-voice",
+  "displayName": "SIP Grok Voice",
+  "version": "0.1.0",
+  "description": "Put Grok Voice on a real phone number via SIP: inbound calls, a spoken greeting, human transfer (SIP REFER), optional transcript and WAV email, and probe-INVITE hardening. Bring your own SIP registrar and xAI key.",
+  "author": {
+    "name": "Cytracon Webservices",
+    "email": "info@cytracon.com"
+  },
+  "homepage": "https://www.cytracon.com",
+  "license": "MIT",
+  "keywords": [
+    "sip",
+    "grok",
+    "voice",
+    "telephony",
+    "xai",
+    "refer",
+    "pstn"
+  ],
+  "category": "integrations",
+  "tags": [
+    "sip",
+    "voice",
+    "grok",
+    "telephony"
+  ],
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "logo": "assets/logo.svg"
+}
