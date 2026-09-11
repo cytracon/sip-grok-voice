@@ -1,0 +1,17 @@
+[Unit]
+Description=SIP-to-AI (Grok Voice)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/sip-to-ai
+ExecStart=/opt/sip-to-ai/.venv/bin/python -m app.main
+Restart=always
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=append:/opt/sip-to-ai/logs/sip-to-ai_systemd.log
+StandardError=append:/opt/sip-to-ai/logs/sip-to-ai_systemd.log
+
+[Install]
+WantedBy=multi-user.target
